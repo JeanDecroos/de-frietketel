@@ -60,12 +60,18 @@ export default function Hero() {
       </div>
 
       {/* Opening hours badge */}
-      <div className="relative mt-16 inline-flex items-center gap-3 border border-border bg-bg/80 px-5 py-3 backdrop-blur-sm">
-        <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-        <div className="text-sm">
-          <span className="font-medium text-dark">Ma&ndash;Vr</span>
-          <span className="mx-2 text-border">|</span>
-          <span className="text-muted">11:15&ndash;14:15 &amp; 17:15&ndash;23:00</span>
+      <div className="relative mt-16 inline-flex flex-col items-center gap-1.5 border border-border bg-bg/80 px-5 py-3 backdrop-blur-sm sm:flex-row sm:gap-3">
+        <div className="flex items-center gap-3">
+          <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+          <div className="text-sm">
+            <span className="font-medium text-dark">Ma&ndash;Vr</span>
+            <span className="mx-2 text-border">|</span>
+            <span className="text-muted">11:15&ndash;14:15 &amp; 17:15&ndash;23:00</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-3 sm:border-l sm:border-border sm:pl-3">
+          <div className="h-2 w-2 rounded-full bg-red-400 sm:block hidden" />
+          <span className="text-sm text-muted/60">Za&ndash;Zo gesloten</span>
         </div>
       </div>
     </section>
